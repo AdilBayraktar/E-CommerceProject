@@ -1,0 +1,203 @@
+[
+  {
+    "Name": "IPhone 13",
+    "Description": "IPhone 13 Pro 512 GB 2022",
+    "Price": 3500,
+    "PictureUrl": "images/products/adidas_shoe-1.png",
+    "productTypeId": 1,
+    "productCategoryId": 1
+  },
+  {
+    "Name": "Huawei Mate 30",
+    "Description": "Huawei Mate 30 Pro max 128 GB 2021",
+    "Price": 3375,
+    "PictureUrl": "images/products/adidas_shoe-2.png",
+    "productTypeId": 1,
+    "productCategoryId": 1
+  },
+  {
+    "Name": "Samsung S9 Edge",
+    "Description": "Samsung S9 Edge 256 GB 2021",
+    "Price": 3375,
+    "PictureUrl": "images/products/adidas_shoe-3.png",
+    "productTypeId": 1,
+    "productCategoryId": 1
+  },
+  {
+    "Name": "Acer Laptop",
+    "Description": "Acer Aspire 3  intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
+    "Price": 4249,
+    "PictureUrl": "images/products/asics_shoe-1.png",
+    "productTypeId": 1,
+    "productCategoryId": 2
+  },
+  {
+    "Name": "Asus Laptop",
+    "Description": "Asus LS-2567820-SS intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
+    "Price": 3499,
+    "PictureUrl": "images/products/asics_shoe-2.png",
+    "productTypeId": 1,
+    "productCategoryId": 2
+  },
+  {
+    "Name": "MAC Pro",
+    "Description": "MAC PRO intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
+    "Price": 3499,
+    "PictureUrl": "images/products/asics_shoe-3.png",
+    "productTypeId": 1,
+    "productCategoryId": 2
+  },
+  {
+    "Name": "BMW X5",
+    "Description": "BMW X5 2015",
+    "Price": 239200,
+    "PictureUrl": "images/products/victor_shoe-1.png",
+    "productTypeId": 2,
+    "productCategoryId": 3
+  },
+  {
+    "Name": "FORD FUCUS",
+    "Description": "FORD FUCUS 2018",
+    "Price": 300000,
+    "PictureUrl": "images/products/victor_shoe-2.png",
+    "productTypeId": 2,
+    "productCategoryId": 3
+  },
+  {
+    "Name": "Mercedes S300",
+    "Description": "Mercedes S300 2022",
+    "Price": 659000,
+    "PictureUrl": "images/products/yonex_shoe-1.png",
+    "productTypeId": 2,
+    "productCategoryId": 3
+  },
+  {
+    "Name": "YAMAHA MOTOR",
+    "Description": "YAMAHA 2019",
+    "Price": 150000,
+    "PictureUrl": "images/products/yonex_shoe-2.png",
+    "productTypeId": 2,
+    "productCategoryId": 4
+  },
+  {
+    "Name": "BMW MOTOR",
+    "Description": "BMW 2018 MOTOR",
+    "Price": 3700,
+    "PictureUrl": "images/products/yonex_shoe-3.png",
+    "productTypeId": 2,
+    "productCategoryId": 4
+  },
+  {
+    "Name": "SAMSUNG 32-inch",
+    "Description": "Samsung 32 inch full HD TV",
+    "Price": 4999,
+    "PictureUrl": "images/products/puma_shoe-1.png",
+    "productTypeId": 3,
+    "productCategoryId": 5
+  },
+  {
+    "Name": "Vistel 54-inch",
+    "Description": "Samsung 54 inch full HD - 4K TV",
+    "Price": 7200,
+    "PictureUrl": "images/products/puma_shoe-2.png",
+    "productTypeId": 3,
+    "productCategoryId": 5
+  },
+  {
+    "Name": "Acer 27-inch",
+    "Description": "Acer 27 inch full HD Monitor",
+    "Price": 3700,
+    "PictureUrl": "images/products/puma_shoe-3.png",
+    "productTypeId": 3,
+    "productCategoryId": 5
+  },
+  {
+    "Name": "Comfort Bed",
+    "Description": "Comfort Bed full options",
+    "Price": 4125,
+    "PictureUrl": "images/products/babolat_shoe-1.png",
+    "productTypeId": 3,
+    "productCategoryId": 6
+  },
+  {
+    "Name": "Office Table",
+    "Description": "160*250 Office table",
+    "Price": 5249,
+    "PictureUrl": "images/products/babolat_shoe-2.png",
+    "productTypeId": 3,
+    "productCategoryId": 6
+  },
+  {
+    "Name": "Bedroom",
+    "Description": "Full option bedroom",
+    "Price": 2999,
+    "PictureUrl": "images/products/babolat_shoe-3.png",
+    "productTypeId": 3,
+    "productCategoryId": 6
+  },
+  {
+    "Name": "Adidas T-shirt",
+    "Description": "Black Adidas T-shert",
+    "Price": 299,
+    "PictureUrl": "images/products/yonex-racket-1.png",
+    "productTypeId": 4,
+    "productCategoryId": 7
+  },
+  {
+    "Name": "Nike Pyiamas",
+    "Description": "Nike Pyiamas",
+    "Price": 499,
+    "PictureUrl": "images/products/yonex-racket-2.png",
+    "productTypeId": 4,
+    "productCategoryId": 7
+  },
+  {
+    "Name": "Adidas Sport shoes",
+    "Description": "Adidas Sport shoes",
+    "Price": 299,
+    "PictureUrl": "images/products/yonex-racket-3.png",
+    "productTypeId": 4,
+    "productCategoryId": 8
+  },
+  {
+    "Name": "Nike Sport shoes",
+    "Description": "Nike Sport shoes",
+    "Price": 399,
+    "PictureUrl": "images/products/babolat-racket-1.png",
+    "productTypeId": 4,
+    "productCategoryId": 8
+  },
+  {
+    "Name": "Adidas FIFA World Cup 2018 OMB Football",
+    "Description": "Featuring an innovative surface panel design, this is the match ball used during football's FIFA World Cup™. Inspired by Russia's urban landscapes, a pixelated graphic pays tribute to the iconic Telstar ball. Its thermally bonded seamless surface designs.",
+    "Price": 2499,
+    "PictureUrl": "images/products/adidas_football-1.png",
+    "productTypeId": 4,
+    "productCategoryId": 9
+  },
+  {
+    "Name": "Adidas FIFA World Cup 2018 OMB Football",
+    "Description": "Featuring an innovative surface panel design, this is the match ball used during football's FIFA World Cup™. Inspired by Russia's urban landscapes, a pixelated graphic pays tribute to the iconic Telstar ball. Its thermally bonded seamless surface designs.",
+    "Price": 3200,
+    "PictureUrl": "images/products/adidas_football-2.png",
+    "productTypeId": 4,
+    "productCategoryId": 9
+  },
+  {
+    "Name": "Nike Pitch Premier League Football",
+    "Description": "Nike Pitch Premier League Football (Yellow/Purple) Ball is made with colorful graphics that stand out on the field for easier ball tracking. A machine-stitched TPU casing delivers great touch and durability during play. ",
+    "Price": 1525,
+    "PictureUrl": "images/products/Nike-Football-1.png",
+    "productTypeId": 4,
+    "productCategoryId": 9
+  },
+  {
+    "Name": "Nike Manchester City Supporters Football",
+    "Description": "Nike Manchester City Supporters Football (Berry) Ball is made with colorful graphics that stand out on the field for easier ball tracking. A machine-stitched TPU casing delivers great touch and durability during play. ",
+    "Price": 1525,
+    "PictureUrl": "images/products/Nike-Football-2.png",
+    "productTypeId": 4,
+    "productCategoryId": 9
+  }
+
+]

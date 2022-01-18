@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "Name": "Phone"
+  },
+  {
+    "Id": 2,
+    "Name": "Computer"
+  },
+  {
+    "Id": 3,
+    "Name": "Cars"
+  },
+  {
+    "Id": 4,
+    "Name": "Motors"
+  },
+  {
+    "Id": 5,
+    "Name": "Tv"
+  },
+  {
+    "Id": 6,
+    "Name": "Furniture"
+  },
+  {
+    "Id": 7,
+    "Name": "T-Shirt"
+  },
+  {
+    "Id": 8,
+    "Name": "Shoes"
+  },
+  {
+    "Id": 9,
+    "Name": "Football"
+  }
+]
