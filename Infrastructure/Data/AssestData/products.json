@@ -3,7 +3,7 @@
     "Name": "IPhone 13",
     "Description": "IPhone 13 Pro 512 GB 2022",
     "Price": 3500,
-    "PictureUrl": "images/products/adidas_shoe-1.png",
+    "PictureUrl": "https://www.apple.com/v/iphone-13/d/images/overview/hero/hero_1_static__d195o2nfxt26_large.jpg",
     "productTypeId": 1,
     "productCategoryId": 1
   },
@@ -11,7 +11,7 @@
     "Name": "Huawei Mate 30",
     "Description": "Huawei Mate 30 Pro max 128 GB 2021",
     "Price": 3375,
-    "PictureUrl": "images/products/adidas_shoe-2.png",
+    "PictureUrl": "https://i4.hurimg.com/i/hurriyet/75/750x422/5e3d56927152d82b1435c353.jpeg",
     "productTypeId": 1,
     "productCategoryId": 1
   },
@@ -19,7 +19,7 @@
     "Name": "Samsung S9 Edge",
     "Description": "Samsung S9 Edge 256 GB 2021",
     "Price": 3375,
-    "PictureUrl": "images/products/adidas_shoe-3.png",
+    "PictureUrl": "https://targetyoutube.com/wp-content/uploads/2018/05/samsung-galaxy-s9-edge-2018-reve-889x500.jpg",
     "productTypeId": 1,
     "productCategoryId": 1
   },
@@ -27,7 +27,7 @@
     "Name": "Acer Laptop",
     "Description": "Acer Aspire 3  intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
     "Price": 4249,
-    "PictureUrl": "images/products/asics_shoe-1.png",
+    "PictureUrl": "https://www.cnet.com/a/img/resize/c65973f419d4a1eba596a5f46e0bb80cf9439ed2/hub/2020/04/24/72b5f8ef-68cc-4fd5-8148-5cd9083714cd/acer-aspire-7-0012.jpg?auto=webp&width=1092",
     "productTypeId": 1,
     "productCategoryId": 2
   },
@@ -35,7 +35,7 @@
     "Name": "Asus Laptop",
     "Description": "Asus LS-2567820-SS intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
     "Price": 3499,
-    "PictureUrl": "images/products/asics_shoe-2.png",
+    "PictureUrl": "https://www.asus.com/event/CES/images/article/01.jpg",
     "productTypeId": 1,
     "productCategoryId": 2
   },
@@ -43,7 +43,7 @@
     "Name": "MAC Pro",
     "Description": "MAC PRO intel Core i5 10th Hard: 512 ssd Model: 2020 Ram: 8GB",
     "Price": 3499,
-    "PictureUrl": "images/products/asics_shoe-3.png",
+    "PictureUrl": "https://cdn.mos.cms.futurecdn.net/uWjEogFLUTBc8mSvagdiuP.jpg",
     "productTypeId": 1,
     "productCategoryId": 2
   },
@@ -51,15 +51,15 @@
     "Name": "BMW X5",
     "Description": "BMW X5 2015",
     "Price": 239200,
-    "PictureUrl": "images/products/victor_shoe-1.png",
+    "PictureUrl": "https://cdn.motor1.com/images/mgl/kpY1B/s3/2022-bmw-x5-black-vermilion.jpg",
     "productTypeId": 2,
     "productCategoryId": 3
   },
   {
-    "Name": "FORD FUCUS",
+    "Name": "FORD FOCUS",
     "Description": "FORD FUCUS 2018",
     "Price": 300000,
-    "PictureUrl": "images/products/victor_shoe-2.png",
+    "PictureUrl": "https://cdn.webtekno.com/media/cache/content_detail/article/98213/ford-focus-fiyat-listesi-ozellikleri-1597830841.jpg",
     "productTypeId": 2,
     "productCategoryId": 3
   },
@@ -67,7 +67,7 @@
     "Name": "Mercedes S300",
     "Description": "Mercedes S300 2022",
     "Price": 659000,
-    "PictureUrl": "images/products/yonex_shoe-1.png",
+    "PictureUrl": "https://cdn.motor1.com/images/mgl/e2EMp/s3/mercedes-c-klasse-limousine-2021.jpg",
     "productTypeId": 2,
     "productCategoryId": 3
   },
@@ -75,7 +75,7 @@
     "Name": "YAMAHA MOTOR",
     "Description": "YAMAHA 2019",
     "Price": 150000,
-    "PictureUrl": "images/products/yonex_shoe-2.png",
+    "PictureUrl": "https://cdn2.yamaha-motor.eu/prod/product-assets/2020/YZF1000R1/2020-Yamaha-YZF1000R1-EU-Icon_Blue-Static-002-03.jpg",
     "productTypeId": 2,
     "productCategoryId": 4
   },
@@ -83,7 +83,7 @@
     "Name": "BMW MOTOR",
     "Description": "BMW 2018 MOTOR",
     "Price": 3700,
-    "PictureUrl": "images/products/yonex_shoe-3.png",
+    "PictureUrl": "https://www.log.com.tr/wp-content/uploads/2021/01/bmw-motorrad.jpg",
     "productTypeId": 2,
     "productCategoryId": 4
   },
@@ -91,7 +91,7 @@
     "Name": "SAMSUNG 32-inch",
     "Description": "Samsung 32 inch full HD TV",
     "Price": 4999,
-    "PictureUrl": "images/products/puma_shoe-1.png",
+    "PictureUrl": "https://m.media-amazon.com/images/I/91o08DsRplL._AC_SL1500_.jpg",
     "productTypeId": 3,
     "productCategoryId": 5
   },
@@ -99,7 +99,7 @@
     "Name": "Vistel 54-inch",
     "Description": "Samsung 54 inch full HD - 4K TV",
     "Price": 7200,
-    "PictureUrl": "images/products/puma_shoe-2.png",
+    "PictureUrl": "https://images.samsung.com/is/image/samsung/p6pim/at/feature/116052906/at-feature-open-up-your-smart-4k-experience-394768461?$FB_TYPE_A_MO_JPG$",
     "productTypeId": 3,
     "productCategoryId": 5
   },
@@ -107,7 +107,7 @@
     "Name": "Acer 27-inch",
     "Description": "Acer 27 inch full HD Monitor",
     "Price": 3700,
-    "PictureUrl": "images/products/puma_shoe-3.png",
+    "PictureUrl": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/4753/4753004ld.jpg",
     "productTypeId": 3,
     "productCategoryId": 5
   },
@@ -115,7 +115,7 @@
     "Name": "Comfort Bed",
     "Description": "Comfort Bed full options",
     "Price": 4125,
-    "PictureUrl": "images/products/babolat_shoe-1.png",
+    "PictureUrl": "https://www.ubuy.com.tr/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODFoQjEzeDNIdFMuX0FDX1NMMTUwMF8uanBn.jpg",
     "productTypeId": 3,
     "productCategoryId": 6
   },
@@ -123,7 +123,7 @@
     "Name": "Office Table",
     "Description": "160*250 Office table",
     "Price": 5249,
-    "PictureUrl": "images/products/babolat_shoe-2.png",
+    "PictureUrl": "https://image.made-in-china.com/2f0j00FbHpnlkGruqA/High-End-L-Shape-Executive-Office-Table-Wooden-Boss-Office-Desk.jpg",
     "productTypeId": 3,
     "productCategoryId": 6
   },
@@ -131,7 +131,7 @@
     "Name": "Bedroom",
     "Description": "Full option bedroom",
     "Price": 2999,
-    "PictureUrl": "images/products/babolat_shoe-3.png",
+    "PictureUrl": "https://furnitureurban.com/wp-content/uploads/2020/04/CMEB6918-scaled.jpg",
     "productTypeId": 3,
     "productCategoryId": 6
   },
@@ -139,7 +139,7 @@
     "Name": "Adidas T-shirt",
     "Description": "Black Adidas T-shert",
     "Price": 299,
-    "PictureUrl": "images/products/yonex-racket-1.png",
+    "PictureUrl": "https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto:sensitive,fl_lossy,c_fill,g_auto/fbb153d213a74ac4b0e8aac400c9b394_9366/trefoil-ti%C5%9Fort.jpg",
     "productTypeId": 4,
     "productCategoryId": 7
   },
@@ -147,7 +147,7 @@
     "Name": "Nike Pyiamas",
     "Description": "Nike Pyiamas",
     "Price": 499,
-    "PictureUrl": "images/products/yonex-racket-2.png",
+    "PictureUrl": "https://i.pinimg.com/originals/4b/dd/b2/4bddb217bb9230c35010587001f1b9a7.jpg",
     "productTypeId": 4,
     "productCategoryId": 7
   },
@@ -155,7 +155,7 @@
     "Name": "Adidas Sport shoes",
     "Description": "Adidas Sport shoes",
     "Price": 299,
-    "PictureUrl": "images/products/yonex-racket-3.png",
+    "PictureUrl": "https://cf.shopee.com.my/file/e9e130d75745d00368b897655afe03fd",
     "productTypeId": 4,
     "productCategoryId": 8
   },
@@ -163,7 +163,7 @@
     "Name": "Nike Sport shoes",
     "Description": "Nike Sport shoes",
     "Price": 399,
-    "PictureUrl": "images/products/babolat-racket-1.png",
+    "PictureUrl": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/201909/16/00117730849787____1__640x640.jpg",
     "productTypeId": 4,
     "productCategoryId": 8
   },
@@ -171,7 +171,7 @@
     "Name": "Adidas FIFA World Cup 2018 OMB Football",
     "Description": "Featuring an innovative surface panel design, this is the match ball used during football's FIFA World Cup™. Inspired by Russia's urban landscapes, a pixelated graphic pays tribute to the iconic Telstar ball. Its thermally bonded seamless surface designs.",
     "Price": 2499,
-    "PictureUrl": "images/products/adidas_football-1.png",
+    "PictureUrl": "https://iadsb.tmgrup.com.tr/a63974/0/0/0/0/800/580?u=https://idsb.tmgrup.com.tr/2017/11/09/adidas-unveils-official-match-ball-for-2018-world-cup-in-russia-1510253428371.jpg",
     "productTypeId": 4,
     "productCategoryId": 9
   },
@@ -179,7 +179,7 @@
     "Name": "Adidas FIFA World Cup 2018 OMB Football",
     "Description": "Featuring an innovative surface panel design, this is the match ball used during football's FIFA World Cup™. Inspired by Russia's urban landscapes, a pixelated graphic pays tribute to the iconic Telstar ball. Its thermally bonded seamless surface designs.",
     "Price": 3200,
-    "PictureUrl": "images/products/adidas_football-2.png",
+    "PictureUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSviuXeJDq0rfjSrYHHCy0NjFf5ZuwS3BrSAA&usqp=CAU",
     "productTypeId": 4,
     "productCategoryId": 9
   },
@@ -187,7 +187,7 @@
     "Name": "Nike Pitch Premier League Football",
     "Description": "Nike Pitch Premier League Football (Yellow/Purple) Ball is made with colorful graphics that stand out on the field for easier ball tracking. A machine-stitched TPU casing delivers great touch and durability during play. ",
     "Price": 1525,
-    "PictureUrl": "images/products/Nike-Football-1.png",
+    "PictureUrl": "https://gfx.r-gol.com/media/res/products/792/115792/795x1035/pilka-nike-pitch-premier-league-sc2994-336-rozmiar-3_1.png",
     "productTypeId": 4,
     "productCategoryId": 9
   },
@@ -195,7 +195,7 @@
     "Name": "Nike Manchester City Supporters Football",
     "Description": "Nike Manchester City Supporters Football (Berry) Ball is made with colorful graphics that stand out on the field for easier ball tracking. A machine-stitched TPU casing delivers great touch and durability during play. ",
     "Price": 1525,
-    "PictureUrl": "images/products/Nike-Football-2.png",
+    "PictureUrl": "https://gfx.r-gol.com/media/res/products/753/112753/pilka-nike-manchester-city-supporter-s-sc2940-010-rozmiar-5_1.png",
     "productTypeId": 4,
     "productCategoryId": 9
   }
