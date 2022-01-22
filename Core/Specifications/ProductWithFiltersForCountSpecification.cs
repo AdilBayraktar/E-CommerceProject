@@ -8,7 +8,7 @@ namespace Core.Specifications
 {
     public class ProductWithFiltersForCountSpecification : BaseSpecification<Product>
     {
-        public ProductWithFiltersForCountSpecification(ProductParams productParams) : base(x => (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) && (!productParams.CaegoryId.HasValue || x.productCategoryId == productParams.CaegoryId) && (!productParams.TypeId.HasValue || x.productTypeId == productParams.TypeId))
+        public ProductWithFiltersForCountSpecification(ProductParams productParams) : base(x => (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) && (!productParams.CategoryId.HasValue || x.productCategoryId == productParams.CategoryId) && (!productParams.TypeId.HasValue || x.productTypeId == productParams.TypeId))
         {
         }
     }

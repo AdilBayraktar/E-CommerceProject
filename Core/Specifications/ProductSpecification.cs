@@ -9,7 +9,7 @@ namespace Core.Specifications
 {
     public class ProductSpecification : BaseSpecification<Product>
     {
-        public ProductSpecification(ProductParams productParams) : base(x => (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) && (!productParams.CaegoryId.HasValue || x.productCategoryId == productParams.CaegoryId) && (!productParams.TypeId.HasValue || x.productTypeId == productParams.TypeId))
+        public ProductSpecification(ProductParams productParams) : base(x => (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search)) && (!productParams.CategoryId.HasValue || x.productCategoryId == productParams.CategoryId) && (!productParams.TypeId.HasValue || x.productTypeId == productParams.TypeId))
         {
             AddInclude(p => p.productCategory);
             AddInclude(p => p.productType);

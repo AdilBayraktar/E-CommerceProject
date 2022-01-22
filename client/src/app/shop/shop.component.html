@@ -1,0 +1,77 @@
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <h4 class="text-warning my-3">Sort Products</h4>
+      <select
+        class="custom-select"
+        name="sorting"
+        (change)="onSortingSelected($event.target.value)"
+      >
+        <option *ngFor="let sort of sortOptions" [value]="sort.value">
+          {{ sort.name }}
+        </option>
+      </select>
+
+      <h4 class="text-warning my-3">Categories:</h4>
+      <ul class="list-group">
+        <li
+          class="list-group-item"
+          *ngFor="let category of categories"
+          [class.active]="category.id === this.shopParams.CategoryId"
+          [value]="category.id"
+          (click)="onCategorySelected(category.id)"
+        >
+          {{ category.name }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-9">
+      <div class="d-flex justify-content-between align-items-center pb-2">
+        <header>
+          <span *ngIf="totalCount && totalCount > 0"
+            ><strong>
+              {{ (shopParams.pageNumber - 1) * shopParams.pageSize + 1 }} -
+              {{
+                shopParams.pageNumber * shopParams.pageSize > totalCount
+                  ? totalCount
+                  : shopParams.pageNumber * shopParams.pageSize
+              }}
+            </strong>
+            Of <strong>{{ totalCount }}</strong> Product</span
+          >
+          <span *ngIf="totalCount === 0"><strong>0</strong>Product</span>
+        </header>
+        <div class="form-inline mt-2">
+          <input #search
+          (keyup)="onSearching()"
+            type="text"
+            class="form-control"
+            style="width: 300px"
+            placeholder="Search a Product"
+          />
+          <button (click)="onSearching()" class="btn btn-outline-primary my-2 m-2">Search</button>
+          <button (click)="onResetSearching()" class="btn btn-outline-warning my-2">Reset Results</button>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col-4 col-sm-6 mb-4" *ngFor="let item of products">
+          <app-product-item [product]="item"></app-product-item>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" *ngIf="totalCount > 0">
+        <pagination
+          [boundaryLinks]="true"
+          [totalItems]="this.totalCount"
+          (pageChanged)="onPageChanging($event)"
+          [itemsPerPage]="this.shopParams.pageSize"
+          previousText="&lsaquo;"
+          nextText="&rsaquo;"
+          firstText="&laquo;"
+          lastText="&raquo;"
+        >
+        </pagination>
+      </div>
+    </div>
+  </div>
+</div>
