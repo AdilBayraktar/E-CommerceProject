@@ -17,12 +17,12 @@
     </div> -->
 
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
-      <h3 class="my-0 mr-md-auto text-warning font-weight-bold text-uppercase">ecommerce</h3>
+      <h3 class="my-0 mr-md-auto text-warning font-weight-bold text-uppercase" [routerLink]="['/']">ecommerce</h3>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="p-2 text-dark" href="#">home</a>
-        <a class="p-2 text-dark" href="#">Enterprise</a>
-        <a class="p-2 text-dark" href="#">Support</a>
-        <a class="p-2 text-dark" href="#">Pricing</a>
+        <a class="p-2 text-dark custom-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+        <a class="p-2 text-dark custom-link" routerLink="/market" routerLinkActive="active">Market</a>
+        <a class="p-2 text-dark custom-link" routerLink="" routerLinkActive="active">Contact</a>
+        <a class="p-2 text-dark custom-link" routerLink="" routerLinkActive="active">About Us</a>
       </nav>
       <a class="position-relative" href="">
         <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>

@@ -1,0 +1,21 @@
+img{
+  max-width: 500px;
+  margin: auto;
+}
+.price{
+  width: max-content;
+  border-radius: 5px;
+}
+hr{
+  border: solid #75767522;
+}
+i{
+  cursor: pointer;
+  font-size: 2em;
+  transition: 0.3s;
+  margin-bottom: 15px;
+
+}
+i:hover{
+  font-size: 28px !important;
+}

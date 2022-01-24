@@ -10,16 +10,16 @@ import { ShopService } from './shop.service';
   styleUrls: ['./shop.component.scss'],
 })
 export class ShopComponent implements OnInit {
-  @ViewChild('search', {static: true}) searchTerm: ElementRef;
+  @ViewChild('search', { static: true }) searchTerm: ElementRef;
   products: IProduct[];
   categories: ICategory[];
-  shopParams = new ShopParams()
-  totalCount: number
+  shopParams = new ShopParams();
+  totalCount: number;
   sortOptions = [
-    {name: "By Name", value: "name"},
-    {name: "By Price Desc", value: "priceDesc"},
-    {name: "By Price Asc", value: "priceAsc"}
-  ]
+    { name: 'By Name', value: 'name' },
+    { name: 'By Price Desc', value: 'priceDesc' },
+    { name: 'By Price Asc', value: 'priceAsc' },
+  ];
 
   constructor(private service: ShopService) {}
 
@@ -32,9 +32,9 @@ export class ShopComponent implements OnInit {
     this.service.getProducts(this.shopParams).subscribe(
       (response) => {
         this.products = response.data;
-        this.shopParams.pageNumber = response.pageIndex
-        this.shopParams.pageSize = response.pageSize
-        this.totalCount = response.count
+        this.shopParams.pageNumber = response.pageIndex;
+        this.shopParams.pageSize = response.pageSize;
+        this.totalCount = response.count;
       },
       (error) => {
         console.log(error);
@@ -45,7 +45,7 @@ export class ShopComponent implements OnInit {
   getCategories() {
     this.service.getCategories().subscribe(
       (response) => {
-        this.categories = [{ id: 0, name: 'All'}, ...response ];
+        this.categories = [{ id: 0, name: 'All' }, ...response];
       },
       (error) => {
         console.log(error);
@@ -55,27 +55,31 @@ export class ShopComponent implements OnInit {
 
   onCategorySelected(categoryId: number) {
     this.shopParams.categoryId = categoryId;
+    this.shopParams.pageNumber = 1;
     this.getProducts();
   }
 
-  onSortingSelected(sort: string){
-    this.shopParams.sort = sort
-    this.getProducts()
+  onSortingSelected(sort: string) {
+    this.shopParams.sort = sort;
+    this.getProducts();
   }
 
-  onPageChanging(event: any){
-    this.shopParams.pageNumber = event.page;
-    this.getProducts()
+  onPageChanging(event: any) {
+    if (this.shopParams.pageNumber !== event) {
+      this.shopParams.pageNumber = event.page;
+      this.getProducts();
+    }
   }
 
-  onSearching(){
-    this.shopParams.search = this.searchTerm.nativeElement.value
-    this.getProducts()
+  onSearching() {
+    this.shopParams.search = this.searchTerm.nativeElement.value;
+    this.shopParams.pageNumber = 1;
+    this.getProducts();
   }
 
-  onResetSearching(){
-    this.searchTerm.nativeElement.value = ''
-    this.shopParams = new ShopParams()
-    this.getProducts()
+  onResetSearching() {
+    this.searchTerm.nativeElement.value = '';
+    this.shopParams = new ShopParams();
+    this.getProducts();
   }
 }

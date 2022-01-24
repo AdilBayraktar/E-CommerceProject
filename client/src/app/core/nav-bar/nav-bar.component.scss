@@ -10,3 +10,24 @@
   top: -12px;
   right: 32px;
 }
+.custom-link {
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  &.active {
+    color: #ffc107 !important;
+  }
+  &.hover {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffc107 !important;
+  }
+}
+h3 {
+  cursor: pointer;
+  transition: 0.3s;
+}
+h3:hover {
+  font-size: 30px;
+}
