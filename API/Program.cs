@@ -26,6 +26,8 @@ namespace API
                     var context = services.GetRequiredService<StoreContext>();
                     await context.Database.MigrateAsync();
                     await StoreContextAssest.AssestAsync(context, loggerFactory);
+
+                    // var userMnager = services.GetRequiredService<UserManager<AppUser>>();
                 }
                 catch(Exception ex)
                 {

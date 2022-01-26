@@ -8,6 +8,7 @@ using API.Middleware;
 using AutoMapper;
 using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -46,6 +47,8 @@ namespace API
             });
             services.AddControllers();
             services.AddDbContext<StoreContext>(s => s.UseSqlite(_Config.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppIdentityDbContext>(x => x.UseSqlite(_Config.GetConnectionString("IdentityConnection")));
+            // services.AddIdentityServices();
             services.Configure<ApiBehaviorOptions>(options=> options.InvalidModelStateResponseFactory = actionContext =>{
                 var errors = actionContext.ModelState
                 .Where(e=> e.Value.Errors.Count > 0)
