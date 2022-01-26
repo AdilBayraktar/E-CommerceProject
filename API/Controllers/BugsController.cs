@@ -33,7 +33,7 @@ namespace API.Controllers
         {
             var thing = _context.Products.Find(42);
             var thingToReturn = thing.ToString();
-            return Ok(new ApiResponse(500));
+            return Ok();
         }
 
         [HttpGet("badrequest")]

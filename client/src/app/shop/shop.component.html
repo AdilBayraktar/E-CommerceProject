@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-5">
   <div class="row">
     <div class="col-3">
       <h4 class="text-warning my-3">Sort Products</h4>
@@ -15,7 +15,7 @@
       <h4 class="text-warning my-3">Categories:</h4>
       <ul class="list-group">
         <li
-          class="list-group-item"
+          class="list-group-item" style="cursor: pointer;"
           *ngFor="let category of categories"
           [class.active]="category.id === this.shopParams.CategoryId"
           [value]="category.id"

@@ -1,0 +1,20 @@
+<div class="bg-info px-4 text-uppercase font-weight-bold" style="padding: 1.20em;">
+  Order Details
+</div>
+<div class="p-4">
+  <p class="font-italic mb-4">Shipping costs will vary.</p>
+  <ul class="list-unstyled mb-4" *ngIf="(basketTotal$ | async)">
+      <li class="d-flex justify-between py-3 border-bottom">
+          <strong class="text-muted">Order SubTotal: </strong>
+          <strong class="pl-2">{{(basketTotal$ | async).subtotal| currency}}</strong>
+      </li>
+      <li class="d-flex justify-between py-3 border-bottom">
+          <strong class="text-muted">Taxes: </strong>
+          <strong class="pl-2">{{(basketTotal$ | async).shipping| currency}}</strong>
+      </li>
+      <li class="d-flex justify-between py-3 border-bottom">
+          <strong class="text-muted">Total Price: </strong>
+          <strong class="pl-2">{{(basketTotal$ | async).total| currency}}</strong>
+      </li>
+  </ul>
+</div>

@@ -16,18 +16,18 @@
       </div>
     </div> -->
 
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom shadow-sm">
       <h3 class="my-0 mr-md-auto text-warning font-weight-bold text-uppercase" [routerLink]="['/']">ecommerce</h3>
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark custom-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a class="p-2 text-dark custom-link" routerLink="/market" routerLinkActive="active">Market</a>
-        <a class="p-2 text-dark custom-link" routerLink="" routerLinkActive="active">Contact</a>
-        <a class="p-2 text-dark custom-link" routerLink="" routerLinkActive="active">About Us</a>
+        <a class="p-2 text-dark custom-link" routerLink="/test-error" routerLinkActive="active">Error</a>
+        <a class="p-2 text-dark custom-link" href="" routerLinkActive="active">About Us</a>
       </nav>
-      <a class="position-relative" href="">
+      <a routerLink="/basket" class="position-relative" href="">
         <i class="fa fa-shopping-cart fa-2x mr-5 text-dark"></i>
-        <div class="cart-no">5</div>
+        <div *ngIf="(basket$ | async) as basket" class="cart-no">{{basket.items.length}}</div>
       </a>
       <a style="margin-right: 15px !important; margin-left: 15px !important;" class="btn btn-outline-warning mr-2">Login</a>
-      <a class="btn btn-warning mr-3">Sign-up</a>
+      <a class="btn btn-warning mr-3 text-light">Sign-up</a>
     </div>

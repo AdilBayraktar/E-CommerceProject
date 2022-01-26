@@ -1,6 +1,14 @@
+<carousel [draggable]="true" [noWrap]="noWrapSlides" [showIndicators]="showIndicator" class="slide">
+  <slide *ngFor="let slide of slides; let index=index">
+    <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+    <div class="carousel-caption">
+       <h2>{{slide.text}}</h2>
+    </div>
+ </slide>
+</carousel>
 <section>
   <div class="d-flex justify-content-center pt-4">
-      <h1>Welcome to ECommerce Site</h1>
+      <h1 style="font-size: 50px;" class="text-uppercase text-warning">Welcome to ECommerce Site</h1>
   </div>
 </section>
 <div class="container marketing">
@@ -9,11 +17,11 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+      <h2 class="featurette-heading">First featurette heading. <span class="text-warning">It’ll blow your mind.</span></h2>
       <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </div>
     <div class="col-md-5">
-      <img src="assets/images/bslide1.jpg" alt="first slide" style="display: block; width: 500px; height: 500px">
+      <img src="https://image.freepik.com/free-photo/cropped-image-woman-inputting-card-information-key-phone-laptop-while-shopping-online_1423-71.jpg" alt="first slide" style="display: block; width: 500px; height: 300px; margin-bottom: 30px; border-radius: 8px;">
     </div>
   </div>
 
@@ -21,11 +29,11 @@
 
   <div class="row featurette">
     <div class="col-md-7 order-md-2 padding-left-20">
-      <h2 class="featurette-heading ml-5">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+      <h2 class="featurette-heading ml-5">Oh yeah, it’s that good. <span class="text-warning">See for yourself.</span></h2>
       <p class="lead ml-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </div>
     <div class="col-md-5 order-md-1">
-      <img src="assets/images/bslide2.jpg" alt="first slide" style="display: block; width: 500px; height: 500px">
+      <img src="https://image.freepik.com/free-photo/e-commerce-online-shopping-plant-sale_53876-133934.jpg" alt="first slide" style="display: block; width: 500px; height: 300px; margin-bottom: 30px; border-radius: 8px;">
     </div>
   </div>
 
@@ -33,12 +41,29 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+      <h2 class="featurette-heading">And lastly, this one. <span class="text-warning">Checkmate.</span></h2>
       <p class="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
     </div>
     <div class="col-md-5">
-      <img src="assets/images/bslide3.jpg" alt="first slide" style="display: block; width: 500px; height: 500px">
+      <img src="https://image.freepik.com/free-photo/business-theme-internet-online-shopping-delivery-concept_1421-5.jpg" alt="first slide" style="display: block; width: 500px; height: 300px; border-radius: 8px;">
     </div>
   </div>
 
 </div>
+<!--Footer-->
+<!-- <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000);
+  }
+  </script> -->
