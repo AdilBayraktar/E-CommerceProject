@@ -7,30 +7,28 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Infrastructure.Identity
 {
-    public class AppIdentityContextAssest
+    public class AppIdentityDbContextSeed
     {
-        public static async Task AssestUserAsync(UserManager<AppUser> userManager)
+        public static async Task SeedUsersAsync(UserManager<AppUser> userManager)
         {
             if (!userManager.Users.Any())
             {
                 var user = new AppUser
                 {
-                    DisplayName = "Adil BAYRAKTAR",
-                    Email = "adil@adil.com",
-                    UserName = "AdilBayraktar",
+                    DisplayName = "Adil",
+                    Email = "adil@selcuk.com",
+                    UserName = "adil@selcuk.com",
                     Address = new Address
                     {
                         FirstName = "Adil",
-                        LastName = "BAYRAKTAR",
-                        Street = "Bosna Hersek Mah",
+                        LastName = "Bayraktar",
+                        Street = "Bosna Hersek",
                         City = "Konya",
                         Country = "Turkey",
-                        MobileNumber = "0535353535"
+
                     }
                 };
-
-                await userManager.CreateAsync(user, "Admin123456");
-
+                await userManager.CreateAsync(user, "Pa$$w0rd");
             }
         }
     }

@@ -38,9 +38,6 @@ namespace Infrastructure.Identity.Migrations
                     b.Property<string>("LastName")
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("MobileNumber")
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("Street")
                         .HasColumnType("TEXT");
 

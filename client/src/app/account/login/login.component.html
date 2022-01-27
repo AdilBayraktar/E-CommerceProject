@@ -1,0 +1,68 @@
+<form
+  [formGroup]="loginForm"
+  (ngSubmit)="onSubmit()"
+  class="form-signin shadow rounded mt-5"
+>
+  <div class="text-center mb-4">
+    <img
+      class="mb-4"
+      src="https://png2.cleanpng.com/sh/ef7f55afc4891cd7c30a51244acc5a2b/L0KzQYm3UsE1N6tmiZH0aYP2gLBuTgdmal5pfehubHBzfbb1lL1lcZhujNN1LX3kgrzslPlvb154fdN7Y3iwdbBuif5mNZD1ReZqYnzohH7wgB9vNZpyedluLUXkSIW6WcE0a2g4SqQALkW2Qoe4WcMxOWY2UKg6NEizQ4m4VckveJ9s/kisspng-web-development-digital-marketing-search-engine-op-tablet-icon-image-5a843913c73225.5326193015186148038159.png"
+      alt=""
+      width="150"
+      height="150"
+    />
+    <h1 class="h3 mb-3 font-weight-normal text-uppercase">Sign in</h1>
+  </div>
+
+  <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+  <app-text-input formControlName="password" [label]="'Password'"></app-text-input>
+
+  <!-- <div class="form-label-group">
+    <input
+      formControlName="email"
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      placeholder="Email address"
+    />
+    <label for="inputEmail">Email address</label>
+    <span
+      class="text-danger"
+      *ngIf="
+        loginForm.get('email').invalid &&
+        loginForm.get('email').touched &&
+        loginForm.get('email').errors['required']
+      "
+      >Email Address is Required</span
+    >
+  </div>
+
+  <div class="form-label-group">
+    <input
+      formControlName="password"
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      placeholder="Password"
+      required=""
+    />
+    <label for="inputPassword">Password</label>
+    <span
+      class="text-danger"
+      *ngIf="
+        !loginForm.get('password').valid &&
+        loginForm.get('password').touched &&
+        loginForm.get('password').errors['required']
+      "
+      >Email Address is Required</span
+    >
+  </div>
+
+  <div class="checkbox mb-3">
+    <label> <input type="checkbox" value="remember-me" /> Remember me </label>
+  </div> -->
+  <button [disabled]="loginForm.invalid" class="btn btn-lg btn-primary btn-block" type="submit">
+    Sign in
+  </button>
+  <p class="mt-5 mb-3 text-muted text-center">© Adil BAYRAKTAR 2022</p>
+</form>

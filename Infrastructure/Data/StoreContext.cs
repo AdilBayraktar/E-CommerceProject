@@ -4,7 +4,9 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using Core.Entities;
+using Core.Entities.Orders;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Infrastructure.Data
 {
@@ -17,6 +19,10 @@ namespace Infrastructure.Data
         public DbSet<Product> Products {get; set; }
         public DbSet <ProductType> productTypes { get; set; }
         public DbSet <Category> categories { get; set; }
+        public DbSet <Order> orders { get; set; }
+        public DbSet <OrderItem> orderItems { get; set; }
+        public DbSet <DeliveryMethod> deliveryMethods { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,10 +33,16 @@ namespace Infrastructure.Data
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
                 {
                     var properties = entityType.ClrType.GetProperties().Where(p=> p.PropertyType == typeof(decimal));
+                    var dateTimeProperties = entityType.ClrType.GetProperties().Where(p => p.PropertyType == typeof(DateTimeOffset));
                     foreach (var property in properties)
                     {
                         modelBuilder.Entity(entityType.Name).Property(property.Name)
                         .HasConversion<double>();
+                    }
+
+                    foreach (var prop in dateTimeProperties)
+                    {
+                        modelBuilder.Entity(entityType.Name).Property(prop.Name).HasConversion(new DateTimeOffsetToBinaryConverter());
                     }
                 }
                 {

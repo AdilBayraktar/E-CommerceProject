@@ -1,0 +1,25 @@
+
+      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="form-signin shadow rounded mt-5">
+          <div class="text-center mb-4">
+            <img
+              class="mb-4"
+              src="https://png2.cleanpng.com/sh/ef7f55afc4891cd7c30a51244acc5a2b/L0KzQYm3UsE1N6tmiZH0aYP2gLBuTgdmal5pfehubHBzfbb1lL1lcZhujNN1LX3kgrzslPlvb154fdN7Y3iwdbBuif5mNZD1ReZqYnzohH7wgB9vNZpyedluLUXkSIW6WcE0a2g4SqQALkW2Qoe4WcMxOWY2UKg6NEizQ4m4VckveJ9s/kisspng-web-development-digital-marketing-search-engine-op-tablet-icon-image-5a843913c73225.5326193015186148038159.png"
+              alt=""
+              width="150"
+              height="150"
+            />
+            <h1 class="h3 mb-3 font-weight-normal text-uppercase">Sign up</h1>
+          </div>
+           <app-text-input formControlName="displayName" [label]="'Name'"></app-text-input>
+           <app-text-input formControlName="email" [label]="'Email Address'"></app-text-input>
+           <app-text-input formControlName="password" [label]="'Password'" [type]="'password'"></app-text-input>
+
+           <ul class="text-danger list-unstyled" *ngIf="errors">
+               <li *ngFor="let err of errors">
+                   {{err}}
+               </li>
+           </ul>
+          <button [disabled]="registerForm.invalid" class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+          <p class="mt-5 mb-3 text-muted text-center">© Adil BAYRAKTAR 2022</p>
+     </form>
+

@@ -8,6 +8,7 @@ import { ServerErrorComponent } from './server-error/server-error.component';
 import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './header/header.component';
 import { PublicFooterComponent } from './public-footer/public-footer.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 
@@ -22,6 +23,7 @@ import { PublicFooterComponent } from './public-footer/public-footer.component';
   ],
   imports: [
     CommonModule,
+    SharedModule,
     RouterModule,
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right',

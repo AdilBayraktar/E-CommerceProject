@@ -10,7 +10,6 @@ namespace Core.Entities.Identity
         public string Street { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public string MobileNumber { get; set; }
 
         [Required]
         public string AppUserId { get; set; }
