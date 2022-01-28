@@ -124,4 +124,10 @@ export class BasketService {
       console.log(error);
     });
   }
+
+  deleteLocalBasket(id: string) {
+    this.basketSource.next(null);
+    this.basketTotal.next(null);
+    localStorage.removeItem('basket_id');
+  }
 }

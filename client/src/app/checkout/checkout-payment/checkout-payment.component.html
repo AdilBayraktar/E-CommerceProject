@@ -1,0 +1,24 @@
+<div class="container mt-4">
+  <h5 class="text-light bg-primary rounded p-2" style="width: fit-content;">Order Info</h5>
+  <app-basket-summary [isBasket]="false"></app-basket-summary>
+</div>
+<div>
+  <h5 class="text-light bg-primary rounded p-2" style="width: fit-content;">Customer Info</h5>
+  <ul class="list-group list-group-flush m-2">
+    <li class="list-group-item"><strong>First Name:</strong> {{addressInfo?.firstName}}</li>
+    <li class="list-group-item"><strong>Last Name:</strong> {{addressInfo?.lastName}}</li>
+    <li class="list-group-item"><strong>Street:</strong> {{addressInfo?.street}}</li>
+    <li class="list-group-item"><strong>City:</strong> {{addressInfo?.city}}</li>
+    <li class="list-group-item"><strong>Country:</strong> {{addressInfo?.country}}</li>
+  </ul>
+</div>
+<div
+  class="float-none d-flex justify-content-between flex-column flex-lg-row mb-5"
+>
+  <button class="btn btn-outline-primary" cdkStepperPrevious>
+    <i class="fa fa-angle-left"> Back to Address</i>
+  </button>
+  <button class="btn btn-primary" routerLink="/success">
+    Submit Order <i class="fa fa-angle-right"></i>
+  </button>
+</div>

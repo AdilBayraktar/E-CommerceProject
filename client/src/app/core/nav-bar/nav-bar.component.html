@@ -21,7 +21,7 @@
       <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark custom-link" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a class="p-2 text-dark custom-link" routerLink="/market" routerLinkActive="active">Market</a>
-        <a class="p-2 text-dark custom-link" routerLink="/test-error" routerLinkActive="active">Error</a>
+        <!-- <a class="p-2 text-dark custom-link" routerLink="/test-error" routerLinkActive="active">Error</a> -->
         <a class="p-2 text-dark custom-link" href="" routerLinkActive="active">About Us</a>
       </nav>
       <a routerLink="/basket" class="position-relative" href="">
@@ -43,8 +43,8 @@
             <a routerLink="/basket" class="dropdown-item d-flex align-items-center py-2">
               <i class="fa fa-shopping-cart mr-3"></i> View Basket
             </a>
-            <a routerLink="/orders" class="dropdown-item d-flex align-items-center py-2">
-              <i class="fa fa-history mr-3"></i> View Orders
+            <a routerLink="/account/profile" class="dropdown-item d-flex align-items-center py-2">
+              <i class="fa fa-history mr-3"></i> View Profile
             </a>
             <div class="dropdown-divider"></div>
             <a (click)="logout()" class="dropdown-item d-flex align-items-center py-2">

@@ -9,6 +9,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { HeaderComponent } from './header/header.component';
 import { PublicFooterComponent } from './public-footer/public-footer.component';
 import { SharedModule } from '../shared/shared.module';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 
@@ -19,7 +20,8 @@ import { SharedModule } from '../shared/shared.module';
     NotFoundComponent,
     ServerErrorComponent,
     HeaderComponent,
-    PublicFooterComponent
+    PublicFooterComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,

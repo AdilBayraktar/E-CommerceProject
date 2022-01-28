@@ -1,0 +1,51 @@
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="border-0 bg-light" scope="col" [class.bg-light]="isBasket">Product Name</th>
+        <th class="border-0 bg-light" scope="col" [class.bg-light]="isBasket">
+          Product Quantity
+        </th>
+        <th class="border-0 bg-light" scope="col" [class.bg-light]="isBasket">Product Price</th>
+        <th class="border-0 bg-light" scope="col" [class.bg-light]="isBasket">Total Price</th>
+        <th *ngIf="isBasket" class="border-0 bg-light" scope="col">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of (basket$ | async).items">
+        <th scope="row">
+          <div class="p-2">
+            <img
+              src="{{ item.pictureUrl }}"
+              class="img-fluid"
+              style="height: 35px; width: 38px; border-radius: 50%"
+            />
+            <div class="ml-3 d-inline-block align-middle">
+              <p class="mb-0">
+                <a
+                  routerLink="/market/{{ item.id }}"
+                  class="text-dark"
+                  >{{ item.productName }}</a
+                >
+              </p>
+            </div>
+          </div>
+        </th>
+        <th class="text-center">
+          <i *ngIf="isBasket" (click)="decrementItem(item)" class="fa fa-minus-circle mr-2 text-primary"></i>
+          <span style="font-size: 1.5em" class="font-weight-bold"
+            >{{item.quantity}}</span
+          >
+          <i *ngIf="isBasket" (click)="incrementItem(item)" class="fa fa-plus-circle mx-2 text-primary"></i>
+        </th>
+        <th class="text-center">{{ item.price | currency }}</th>
+        <th class="text-center">
+          {{ item.quantity * item.price | currency }}
+        </th>
+        <th class="text-center">
+          <i *ngIf="isBasket" (click)="removeBasketItem(item)" class="fa fa-trash text-danger"></i>
+        </th>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CheckoutSuccessComponent } from './checkout/checkout-success/checkout-success.component';
+import { AboutUsComponent } from './core/about-us/about-us.component';
 import { AuthGuard } from './core/guards/auth.guard';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
@@ -41,6 +43,15 @@ const routes: Routes = [
   {
     path: 'account',
     loadChildren: () => import('./account/account.module').then(module => module.AccountModule)
+  },
+  {
+    path: 'success',
+    canActivate: [AuthGuard],
+    component: CheckoutSuccessComponent
+  },
+  {
+    path: 'about',
+    component: AboutUsComponent
   },
   {
     path: '**',
